@@ -1,0 +1,15 @@
+<div class="card-deck">
+    {% for object in object_list %}
+    <div class="card">
+        <a href="detail/{{ object.pk }}/">
+            <img class='card-img-top' src='{{ object.images }}' alt=''>
+            <div class="card-body">
+                {{ object.title }}
+            </div>
+            <div class="card-footer">
+                bbbbb
+            </div>
+        </a>
+    </div>
+    {% endfor %}
+</div>
